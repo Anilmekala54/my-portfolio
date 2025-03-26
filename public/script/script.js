@@ -27,7 +27,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }
 });
 
-/*toggle */
 document.addEventListener('DOMContentLoaded',function(){
  let homeBtn=document.querySelector('.home-elements')
  let toggleMenu=document.querySelector('#toggle-menu')
