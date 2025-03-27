@@ -16,10 +16,15 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const message = document.getElementById('message').value;
    
 
+    
    
     if (name && email && message) {
-        const contactData =[ { name, email, message }];
-        localStorage.setItem('contactData',JSON.stringify(contactData))
+      
+        let oldData=JSON.parse(localStorage.getItem('contactData'))||[];
+       
+        const contactData = { name, email, message };
+        oldData.push(contactData)
+        localStorage.setItem('contactData',JSON.stringify(oldData))
         alert('Thank you for your message! I will get back to you soon.');
         this.reset(); 
     } else {

@@ -10,6 +10,7 @@ else{
 
 
 function redender(data){
+ 
     let clust='';
     data.forEach(element => {
         clust +=`  <div class="mydata">
