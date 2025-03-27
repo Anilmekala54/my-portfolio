@@ -18,7 +18,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
    
     if (name && email && message) {
-        const contactData = { name, email, message };
+        const contactData =[ { name, email, message }];
         localStorage.setItem('contactData',JSON.stringify(contactData))
         alert('Thank you for your message! I will get back to you soon.');
         this.reset(); 
@@ -33,8 +33,7 @@ document.addEventListener('DOMContentLoaded',function(){
  toggleMenu.addEventListener('click',function(){
     homeBtn.classList.toggle('hidden')
     console.log("hello");
-    
-
+ 
  })
 
 
